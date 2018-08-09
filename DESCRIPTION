@@ -1,0 +1,30 @@
+Package: lassoenet
+Title: An Interactive Implementation of Penalised Regressions
+Version: 0.0.0.9000
+Authors@R: person("Mokyo", "Zhou", email = "mz37@st-andrews.ac.uk", role = c("aut", "cre"))
+Description: The package "lassoenet" is aiming to help and guide interested users to build penalised
+    linear models to their own datasets. More specifically, the package is focusing on steering the 
+    users into a more appropriate modelling set up by providing a user-friendly interactive mode that 
+    contains a series of performance related questions and suggestions throughout the fitting process. 
+    Furthermore, core functions from the package glmnet are called and further developed on to form a 
+    collection of very flexible functions that offer extra fitting settings for both the Lasso and the 
+    Elastic Net. A direct and convenient fitting of the Adpative Lasso is also allowed.    
+depends: R (>= 3.4.2)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports:
+    glmnet (>= 2.0-10),
+    car (>= 2.1-5),
+    foreach (>= 1.4.3),
+    doParallel (>= 1.0.11),
+    parallel, 
+    utils,
+    stats,
+    graphics,
+    MASS,
+    base
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
